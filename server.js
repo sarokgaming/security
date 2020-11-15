@@ -30,8 +30,8 @@ const { get } = require("snekfetch");
 const guild = require("guild");
 const dateFormat = require("dateformat");
 const pretty = require("pretty-ms");
-client.login("token"); ////////////////mrfix
-const prefix = "prefix";
+client.login("Nzc1MjgyNDQ5OTY0ODU5Mzk0.X6kEDA.7LHXdFG2AL_tnHYkbgGGFm1KWtc"); ////////////////mrfix
+const prefix = "s";
 var table = require("table").table;
 const Discord = require("discord.js");
 client.on("ready", () => {
@@ -40,7 +40,7 @@ client.on("ready", () => {
 });
 // ======== { • playing • }======== //
 client.on("ready", () => {
-  client.user.setActivity("2help | it’s time to secure your server", {
+  client.user.setActivity("shelp | it’s time to secure your server", {
     type: "PLAYING"
   }); ////////////////mrfix
   client.user.setStatus("ONLINE");
