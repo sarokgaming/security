@@ -58,10 +58,7 @@ anti roleC [number]
 anti time [number]
 antibots [on / off]
 settings
-
-lock
-unlock
-
+lock & unlock
 invite
 about
 server
@@ -69,8 +66,8 @@ user
 profile
 Best Discord __AntiSpam__
 Best Discord __AntiShare Everyone & Here & Link .__`;
-    var addserver = `https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&scope=bot&permissions=2080374975`;
-    var SUPPORT = `https://discord.gg/6ASrSeG`;
+    var addserver = ``;
+    var SUPPORT = `https://discord.gg/Ga6qeGZP `;
     let embed = new Discord.RichEmbed()
       .setTitle(`${m.author.username}`)
       .setDescription(
