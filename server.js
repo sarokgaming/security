@@ -30,8 +30,8 @@ const { get } = require("snekfetch");
 const guild = require("guild");
 const dateFormat = require("dateformat");
 const pretty = require("pretty-ms");
-client.login("Nzc1MjgyNDQ5OTY0ODU5Mzk0.X6kEDA.7LHXdFG2AL_tnHYkbgGGFm1KWtc"); ////////////////mrfix
-const prefix = "s";
+client.login("Nzc1MjgyNDQ5OTY0ODU5Mzk0.X6kEDA.0lHFHYE2dGRJBqrDKTFDIM6NVxY"); ////////////////mrfix
+const prefix = "!";
 var table = require("table").table;
 const Discord = require("discord.js");
 client.on("ready", () => {
@@ -40,7 +40,7 @@ client.on("ready", () => {
 });
 // ======== { • playing • }======== //
 client.on("ready", () => {
-  client.user.setActivity("shelp | it’s time to secure your server", {
+  client.user.setActivity("!help | it’s time to secure your server", {
     type: "PLAYING"
   }); ////////////////mrfix
   client.user.setStatus("ONLINE");
@@ -110,9 +110,7 @@ client.on("message", message => {
     var embed = new Discord.RichEmbed()
       .setTitle("✨ | ClickHere To Add " + `${client.user.username}` + " .")
       .setURL(
-        "https://discordapp.com/oauth2/authorize?client_id=" +
-          `${client.user.id}` +
-          "&scope=bot&permissions=2080374975"
+        ""
       )
       .setTimestamp()
       .setFooter(`Requested By | ${message.author.username}`)
@@ -140,7 +138,7 @@ client.on("message", message => {
       .addField("**Channels** : ", `» ${client.channels.size} `, true)
       .addField("**Users** : ", `» ${client.users.size} `, true)
       .addField("**Bot Name** :  ", `» ${client.user.tag} `, true)
-      .addField("**Bot Owner** :  ", `» MrFIX`, true) // تعديل مهم عدل هذا الرقم لايدي حسابك
+      .addField("**Bot Owner** :  ", `» Robot.Sadam..🥀`, true) // تعديل مهم عدل هذا الرقم لايدي حسابك
       .setImage("")
       .setFooter(message.author.username, message.author.avatarURL);
     message.channel.send(bot);
