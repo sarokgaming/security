@@ -30,8 +30,8 @@ const { get } = require("snekfetch");
 const guild = require("guild");
 const dateFormat = require("dateformat");
 const pretty = require("pretty-ms");
-client.login("Nzc1MjgyNDQ5OTY0ODU5Mzk0.X6kEDA.0lHFHYE2dGRJBqrDKTFDIM6NVxY"); ////////////////mrfix
-const prefix = "!";
+client.login("Nzc1MjgyNDQ5OTY0ODU5Mzk0.X6kEDA.KaQYJ1LOclaLu8P6FpbjMVjxJ3w"); ////////////////mrfix
+const prefix = ".";
 var table = require("table").table;
 const Discord = require("discord.js");
 client.on("ready", () => {
@@ -40,7 +40,7 @@ client.on("ready", () => {
 });
 // ======== { • playing • }======== //
 client.on("ready", () => {
-  client.user.setActivity("!help | it’s time to secure your server", {
+  client.user.setActivity(".help | it’s time to secure your server", {
     type: "PLAYING"
   }); ////////////////mrfix
   client.user.setStatus("ONLINE");
@@ -49,25 +49,18 @@ client.on("ready", () => {
 client.on("message", m => {
   if (m.content === prefix + "help") {
     let Dashboard = `
-anti ban [number]
-anti kick [number]
-anti channelD [number]
-anti channelC [number]
-anti roleD [number]
-anti roleC [number]
-anti time [number]
-antibots [on / off]
-settings
-lock & unlock
-invite
-about
-server
-user
-profile
+
+** **[ Support](${SUPPORT})** - **[ Invite](${Link})** 
+ Security
+\`.anti ban\` - \`.anti kick\`- \`.anti rolesC\` - \`.anti rolesD\`  
+ \`.anti channelD\` - \`.antibot on\` - \`.antibot off\`- \`.settings\`  
+Generall
+\`.server\` - \`.infobot\` - \`.youtube\` - \`.google\` - \`.invite\` - \`.vote\` - \`.support\` - \`.member\` - \`.roles\` - \`.emoji\` - \`.myrole\` - \`.server\`
+Moderation
+\`.lock\` - \`.unlock\` -\`.en cv\ ` \`.user\ `-\`.about\` - \`.ku cv\` - \`.setnick\` - \`.clear\`
+**
 Best Discord __AntiSpam__
 Best Discord __AntiShare Everyone & Here & Link .__`;
-    var addserver = ``;
-    var SUPPORT = `https://discord.gg/Ga6qeGZP `;
     let embed = new Discord.RichEmbed()
       .setTitle(`${m.author.username}`)
       .setDescription(
